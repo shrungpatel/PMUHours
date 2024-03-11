@@ -10,10 +10,19 @@ h1 {
   /*80%,#2f312f 90%,#3f4549 90%);*/
 }
 
+/* For centering */
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
   border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .bottomnav {
@@ -62,11 +71,6 @@ h1 {
   color: black;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  background-color: lightgoldenrodyellow;
-}
-
 /* Add some padding inside the card container */
 .container {
   padding: 6px 16px;
@@ -80,6 +84,12 @@ h1 {
   font: 13px/1.5 sans-serif;
   background-color: rgba(255, 255, 255, 0.6);
   min-width: 50%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 8px 8px 8px 8px rgba(255, 255, 255, 0.1);
 }
 
 .card h4 {

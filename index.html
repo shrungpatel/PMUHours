@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Show footer when someone hovers over the text -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +8,31 @@
     <title>PMU Dining Hours</title>
     <h1 style="text-align:center">PMU Dining Hours</h1>
 </head>
-<div style="place-content:center">
-<svg width="30" height="30">
-    <circle cx="15" cy="15" r="6" fill="yellow" />
-    <line
-id="ray"
-stroke="yellow"
-stroke-width="2"
-stroke-linecap="round"
-x1="15"
-y1="1"
-x2="15"
-y2="4"
-></line>
-<use href="#ray" transform="rotate(45 15 15)" />
-<use href="#ray" transform="rotate(90 15 15)" />
-<use href="#ray" transform="rotate(135 15 15)" />
-<use href="#ray" transform="rotate(180 15 15)" />
-<use href="#ray" transform="rotate(225 15 15)" />
-<use href="#ray" transform="rotate(270 15 15)" />
-<use href="#ray" transform="rotate(315 15 15)" />
-  </svg>
-  <svg width="30" height="30">
-    <path
-      fill="white"
-      d="
+<div class="center">
+    <svg width="30" height="30" style="margin-right:10px">
+        <circle cx="15" cy="15" r="6" fill="yellow" />
+        <line id="ray" stroke="yellow" stroke-width="2" stroke-linecap="round" x1="15" y1="1" x2="15" y2="4"></line>
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+    </svg>
+    <svg width="30" height="30" style="margin-left:10px">
+        <path fill="white" d="
         M 23, 5
         A 12 12 0 1 0 23, 25
-        A 12 12 0 0 1 23, 5"
-    />
-  </svg>
-  </div>
+        A 12 12 0 0 1 23, 5" />
+    </svg>
+</div>
+
 <body class="background">
     <div class="topnav">
         <p>Meal Swipes Accepted</p>
     </div>
-    
+
     <div class="wrapper">
         <div class="card">
             <div class="container">
@@ -73,6 +62,9 @@ y2="4"
                 <p>Meal Swipes: M-R 5PM-8PM</p>
             </div>
         </div>
+
+<!-- FIX THIS -->
+
         <div class="card">
             <div class="container">
                 <h4><b>Chef Bill Kim's</b></h4>
@@ -94,7 +86,7 @@ y2="4"
                 <p>Meal Swipes: M-R 5PM-8PM</p>
             </div>
         </div>
-        
+
         <div class="card">
             <div class="container">
                 <h4><b>Fresh Fare</b></h4>
@@ -132,7 +124,7 @@ y2="4"
         </div>
     </div>
 
-    <br></br>
+    <!---- <br></br> -->
 
     <div class="topnav">
         <p>Meal Swipes Not Accepted</p>
@@ -158,5 +150,10 @@ y2="4"
         </div>
     </div>
 </body>
-<footer><div class="bottomnav"><p>Made by Shrung K. Patel</p></div></footer>
+<footer>
+    <div class="bottomnav">
+        <p>Made by Shrung K. Patel</p>
+    </div>
+</footer>
+
 </html>
